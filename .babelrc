@@ -1,0 +1,21 @@
+{
+  "presets": [
+    "env",
+    "react"
+  ],
+  "plugins": [
+    [
+      "import", {
+        "style": "css",
+        "libraryName": "antd-mobile"
+      }
+    ],"transform-runtime"
+  ],
+  "comments": false,
+  "env": {
+    "test": {
+      "presets": ["env", "stage-0"],
+      "plugins": [ "istanbul" ]
+    }
+  }
+}

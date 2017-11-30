@@ -1,0 +1,585 @@
+.homePageBody{
+  background: #FFFFFF;
+  margin-top: 99px;
+}
+
+//头部部分
+.Navigation{
+  background: #000000;
+  border: 0 solid #FFFFFF;/*no*/
+  height: 100px;
+  width: 750px;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+ // border-bottom: 1px solid #D4D4D4;/*no*/
+  .homeOrder{
+    display: flex;
+    flex: 2;
+    flex-direction: row;
+    /*justify-content: flex-start;*/
+    align-items: center;
+    img{
+      width: 32px;
+      height: 28px;
+      margin-left: 30px;
+    }
+    .icon{
+      width: 32px; height: 41px;
+      vertical-align: -0.15em;
+      fill: white;
+      overflow: hidden;
+      margin-left: 30px;
+    }
+  }
+  .title{
+    flex: 2;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    font-family: PingFangSC-Regular;
+    font-size: 34px;
+    color: #FFFFFF;
+    letter-spacing: 0.38px;
+    .icon{
+      background-color: red;
+      width: 100px; height: 100px;
+      vertical-align: -0.15em;
+      fill: currentColor;
+      overflow: hidden;
+    }
+
+  }
+  .search{
+    flex: 1;
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-end;
+    align-items: center;
+    img{
+      width: 56px;
+      height: 100px;
+      margin-right: 0;
+    }
+    .icon{
+      width: 56px; height: 100px;
+      vertical-align: -0.15em;
+      fill: white;
+      overflow: hidden;
+    }
+
+  }
+  .shoppongCat{
+    flex: 1;
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-end;
+    align-items: center;
+    img{
+      height: 100px;
+      width: 50px;
+      margin-right: 28px;
+    }
+    .icon{
+      width: 50px; height: 100px;
+      vertical-align: -0.15em;
+      fill: white;
+      overflow: hidden;
+      margin-right: 28px;
+    }
+
+  }
+}
+//首页封面图
+.cover{
+  height: 746px;
+  width: 750px;
+  img{
+    height: 746px;
+    width: 750px;
+  }
+  .am-carousel-wrap-dot{
+    // background: #ff0000;
+    span{
+      background: transparent;
+      border: 1px solid #FFFFFF;/*no*/
+      height: 14px;
+      width: 14px;
+      border-radius: 50%;
+    }
+  }
+  .am-carousel-wrap{
+    margin-bottom: 20px;
+  }
+  .am-carousel-wrap-dot-active{
+    span{
+      background: #FFFFFF;
+    }
+  }
+}
+//分类名称模块
+.commodity{
+  //background: #fffefd;
+  height: auto;
+  width: 750px;
+  .bannerHostImg{
+    height: 500px;
+    width: 750px;
+    display: block;
+  }
+}
+.commodityTypeTitle{
+  height: 148px;
+  width: 750px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: #FFFFFF;
+  span{
+    font-family: PingFang-SC-Medium;
+    font-size: 30px;
+    color: #000000;
+    letter-spacing: 0;
+  }
+}
+//修改后的样式
+.commodityTypeTow{
+  height: 150px;
+  width: 750px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  .CTbgImg{
+    height: 150px;
+    width: 750px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .CTbgImg img{
+    width: 647px;
+    height: 125px;
+  }
+  .CTbgTitle{
+    height: 150px;
+    width: 750px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .spanTow{
+      margin-left: 15px;
+    }
+  }
+  .CTbgTitle span{
+    color: #1B1B20;
+    font-size: 26px;
+    /*font-weight: bold;*/
+  }
+}
+//帽子左右滑动模块
+.hatList{
+  width: 750px;
+  overflow-x:scroll;
+  overflow-y: hidden;
+  height: 1044px;
+  box-sizing: content-box;
+  -webkit-overflow-scrolling : touch;
+  .hatListBodyLeft{
+    margin-left: 10px;
+  }
+  .hatListBody{
+    display: table;
+    //flex-direction: row;
+    position: relative;
+    //  margin-left: 10px;
+    .hatGroup{
+      display: table;
+      width: 722px;
+      position: relative;
+     // margin-left: 10px;
+    }
+    .hatGroupBag{
+      display: table;
+      width: 750px;
+      position: relative;
+    }
+    .hatGroupViewMore{
+      display: table;
+      width: 361px;
+      position: relative;
+    }
+  }
+}
+//帽子左右滑动模块少于2个
+.hatListTow{
+  width: 750px;
+  overflow-x:scroll;
+  overflow-y: hidden;
+  height: 370px;
+  -webkit-overflow-scrolling: touch;
+  .hatListBodyLeft{
+    margin-left: 10px;
+  }
+  .hatListBody{
+    display: flex;
+    flex-direction: row;
+    //  margin-left: 10px;
+    .hatGroup{
+      display: table;
+      width: 722px;
+      position: relative;
+      // margin-left: 10px;
+    }
+    .hatGroupBag{
+      display: table;
+      width: 750px;
+      position: relative;
+    }
+    .hatGroupViewMore{
+      display: table;
+      width: 361px;
+      position: relative;
+    }
+  }
+}
+
+//首页单个商品类型
+.hatBody{
+  width: 248px;
+  height: 358px;
+  background: #FFFFFF;
+  margin-top: 0px;
+  margin-right: 0px;
+  float: left;
+  position: relative;
+  display: table;
+  .hatImgBody{
+    height: 248px;
+    width: 248px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .soldOutImg{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    top: 170px;
+  }
+  .hatImg{
+    width: 248px;
+    height: 248px;
+    display: block;
+  }
+  .hatAttribute{
+    width: 248px;
+    height: 110px;
+    position: relative;
+    overflow: hidden;
+    .hatName{
+      width: 248px;
+      text-align: center;
+      font-family: PingFangSC-Regular;
+      font-size: 22px;
+      color: rgba(0, 0, 0, 0.5);
+      letter-spacing: 0.5px;
+      margin-top: 20px;
+    }
+    .hatUnitPrice{
+      width: 240px;
+      text-align: center;
+      font-family: PingFangSC-Regular;
+      /*font-family: Roboto-Regular;*/
+      font-size: 24px;
+      color: #000000;
+     // font-weight: bold;
+      letter-spacing: 0.8px;
+      margin-top: 12px;
+    }
+  }
+}
+//查看更多
+.ViewMoreBody{
+  width: 350px;
+  height: 510px;
+  background: #FFFFFF;
+  margin-top: 10px;
+  margin-right: 10px;
+  float: left;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  .viewMore{
+    text-align: center;
+    img{
+      height: 60px;
+      width: 60px;
+    }
+    .viewMoreText{
+      margin-top: 44px;
+      font-family:PingFangSC-Regular;
+      font-size: 22px;/*px*/
+      color: #666666;
+      letter-spacing: 1.05px;
+    }
+  }
+}
+
+.carousel{
+  width: 750px;
+  height: 586px;
+  img{
+    width: 750px;
+    height: 586px;
+  }
+  .am-carousel-wrap-dot{
+   // background: #ff0000;
+    span{
+      background: transparent;
+      border: 1px solid #FFFFFF;/*no*/
+      height: 14px;
+      width: 14px;
+      border-radius: 50%;
+    }
+  }
+  .am-carousel-wrap{
+    margin-bottom: 20px;
+  }
+  .am-carousel-wrap-dot-active{
+    span{
+      background: #FFFFFF;
+    }
+  }
+}
+.homePageListView{
+  padding: 0;
+  .am-list-header{
+    padding: 0;
+    border: 0;
+  }
+  .am-list-body:after {
+    border-bottom: 0px solid #ddd;/*no*/
+    top: 0;
+  }
+  .am-list-body{
+    border: 0;
+    display: table;
+    background: #f1f1f1;
+    // margin-top: -10px;
+  }
+  .am-list-footer{
+    padding: 0;
+    background: #F4f6fe;
+  }
+}
+//底部样式
+.listViewFoot{
+  height: 140px;
+  width: 750px;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
+  span{
+    font-family: PingFangSC-Regular;
+    font-size: 22px;
+    color: #CECECE;
+    letter-spacing: 1.26px;
+  }
+  .loadingBody{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    img{
+      width: 33px;
+      height: 33px;
+
+    }
+  }
+  .imgLeft{
+    margin-right: 28px;
+    width: 122px;
+    height: 1px;
+  }
+  .imgRight{
+    margin-left: 28px;
+    width: 122px;
+    height: 1px;
+  }
+}
+
+//试运营
+.tryOutBody{
+  position: absolute;
+  right: 37px;
+  top: 86px;
+  span{
+    font-family: PingFangSC-Light;
+    font-size: 20px;
+    color: #919191;
+    letter-spacing: 0.46px;
+  }
+}
+.moreBody{
+  position: absolute;
+  right: 30px;
+  top: 50px;
+  width: 200px;
+  height: 100px;
+  text-align: right;
+  span{
+    font-family: PingFangSC-Light;
+    font-size: 24px;
+    color: #1B1B20;
+    letter-spacing: 0.46px;
+  }
+}
+//中间分组导航
+.GroupingList{
+  height: 100px;
+  width: 750px;
+  background: #282829;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  .GroupingRight{
+    height: 100px;
+    width: 96px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .GroupingRIng{
+      height: 100px;
+      width: 86px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      img{
+        width: 30px;
+        height: 21px;
+      }
+    }
+    .GroupingRBg{
+      height: 100px;
+      width: 10px;
+      background-image: linear-gradient(-90deg, #000000 0%, #282829 100%);
+    }
+  }
+  .GroupingLeft{
+    display: flex;
+    flex: 1;
+    overflow-x: auto;
+    .GroupingTitleBody{
+      display: flex;
+      flex-direction: row;
+    }
+    .GroupingTitle{
+      float: left;
+      padding-left: 30px;
+      padding-right: 30px;
+      height: 100px;
+     // width: auto;
+      display: inline-table;
+      .TitleDiv{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        span{
+          font-family:PingFangSC-Regular;
+          font-size: 30px;
+          color: #FFFFFF;
+          letter-spacing: 0.83px;
+          // width: 164px;
+        }
+      }
+    }
+  }
+}
+//分组列表
+.GroupingPopup{
+  width: 750px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 10000;
+  .PopupBg{
+    width: 750px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(40,40,41,0.80);
+  }
+  .popupBody{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 750px;
+    height: auto;
+    background: #FFFFFF;
+    .popupTitle{
+      height: 94px;
+      width: 750px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      border-bottom: 1px solid #b6b6b8;/*no*/
+      span{
+        font-family: PingFangSC-Regular;
+        font-size: 30px;
+        color: #1E1E1E;
+        letter-spacing: 0;
+        margin-left: 30px;
+      }
+    }
+  }
+  .popupCenter{
+    padding-top: 25px;
+    padding-bottom: 40px;
+    display: table;
+    .groupName{
+      float: left;
+      margin: 15px 0 15px 30px;
+      width: 148px;
+      height: 65px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #B6B6B8;/*no*/
+    }
+  }
+}
+
+
